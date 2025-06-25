@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
     @GetMapping("/hidden-page")
-    public String hello() {
+    public String hiddenpage() {
     return "hidden-page";
 
     }
 
     @GetMapping("/")
-    public String hiddePage() {
+    public String hello() {
         return "hello";
     }
 }
