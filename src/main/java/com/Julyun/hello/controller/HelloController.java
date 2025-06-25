@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HelloController {
-    @GetMapping("/")
+    @GetMapping("/hidden-page")
     public String hello() {
-    return "hello";
+    return "hidden-page";
 
     }
 
-    @GetMapping("/hidden-page")
+    @GetMapping("/")
     public String hiddePage() {
-        return "hidden-page";
+        return "hello";
     }
 }
