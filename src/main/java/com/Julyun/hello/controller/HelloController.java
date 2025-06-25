@@ -11,7 +11,7 @@ public class HelloController {
     }
 
     @GetMapping("/hidden-page")
-    public String hiddenpage() {
+    public String hiddenPage() {
     return "hidden-page";
 
     }
